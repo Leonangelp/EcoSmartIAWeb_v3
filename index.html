@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoSmart - Clasificador de Residuos</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="logo-ecosmart.png" alt="EcoSmart logo" class="header-img" />
+  </header>
+
+  <main>
+    <div id="webcam-container"></div>
+    <img id="uploaded-image" style="display:none; max-width:90%; border-radius:10px; margin: 10px auto;" />
+
+    <div id="result-box">
+      <p id="result-text">Parece que tu desecho es <strong>___</strong></p>
+    </div>
+
+    <h3>Porcentaje de seguridad</h3>
+    <div id="label-container"></div>
+
+    <div class="buttons">
+      <button onclick="toggleCamera()" id="btn-toggle">Pausar cámara</button>
+      <button onclick="switchCamera()" id="btn-switch">Cambiar cámara</button>
+      <input type="file" accept="image/*" id="imageUpload" onchange="handleUpload(this)">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
