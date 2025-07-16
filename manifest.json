@@ -8,14 +8,9 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "Logo_EcoIA.jpg",
+      "src": "Logo_EcoIA.png",
       "sizes": "192x192",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "Logo_EcoIA.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/png"
     }
   ]
 }
